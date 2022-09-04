@@ -1,0 +1,350 @@
+@font-face {
+    font-family: "Ginto Nord";
+    src: url("./Ginto/Ginto\ Nord\ Regular.woff2.ttf") format("woff2");
+    font-weight:normal;
+    font-style:normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Ginto Nord";
+}
+.bars{
+    display: none;
+    color: #ffffff;
+}
+html,body{
+    overflow-x: hidden;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    position: absolute;
+    width: 100%;
+}
+.container{
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-inline:7.5rem;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.header-logo  a{
+    display: block;
+    color: #ffffff;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+header nav ul li a{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.open-discord a{
+    font-size: 0.8rem;
+    color: #000000;
+    display: block;
+    background-color: #ffffff;
+    padding: 0.6rem;
+    border-radius: 10rem;
+    text-transform: capitalize;
+}
+
+section.hero{
+    padding: 18rem 0 0 0;
+    /* height: 89.2vh; */
+    background: url("./assets/images/cloud.svg"),#404eed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-image{
+    width: 100%;
+}
+.bg-image img{
+    max-width: 100%;
+}
+img.bg-img {
+    z-index: -1;
+}
+img.left-img {
+    position: absolute;
+    left: -12rem;
+    z-index: 1;
+    width: 30rem;
+    top: 20.5rem;
+}
+img.right-img {
+    position: absolute;
+    right: -10rem;
+    z-index: 1;
+    top: 20rem;
+    width: 27rem;
+}
+
+/* Hero banner css start */
+
+.hero-banner {
+    position: relative;
+    bottom: 10rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 42rem;
+    margin-inline: auto;
+    color: #ffffff;
+}
+.hero-banner h1{
+    font-size: 4rem;
+}
+.hero-banner p {
+    text-align: center;
+    margin: 2rem 0;
+    line-height: 1.8rem;
+}
+.download{
+    margin-inline: auto;    
+    gap: 4rem;
+    display: flex;
+}
+.download a.open-window{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+}
+.download a.open-window::before{
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+.download a.open-browser{
+    background-color: #23272a;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+}
+
+/* Hero banner css end */
+
+/* Study group css start */
+
+.study{
+    padding: 5rem 0;
+}
+.study-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:3rem;
+}
+.study-group-image img{
+    max-width: 43rem;
+}
+.study-group-content {
+    max-width: 21rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.study-group-content h2 {
+    font-size: 38px;
+}
+.study-group-content p{
+    line-height: 1.9rem;
+    /* color: #99aab5; */
+}
+/* Study group css end */
+
+/* Voice start*/
+section.voice{
+    background-color: #f6f6f6;
+}
+.voice-conneted {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    padding: 5rem 0;
+}
+.voice-connected-content h2{
+    font-size: 3rem;
+}
+.voice-connected-content p{    
+    margin: 1.5rem 0;
+    line-height: 1.8rem;
+}
+/* Voice end */
+
+
+/* Coach start */
+.coach{
+    padding: 5rem 0;
+}
+.coach-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:3rem;
+}
+.coach-group-image img{
+    max-width: 43rem;
+}
+.coach-group-content {
+    max-width: 21rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.coach-group-content h2 {
+    font-size: 38px;
+}
+.coach-group-content p{
+    line-height: 1.9rem;
+    /* color: #99aab5; */
+}
+/* Coach end */
+
+/* chill start */
+section.chill{
+    background-color: #f6f6f6;
+    padding: 6rem 0;
+}
+.chill-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chill-content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+.chill-content h2{
+    font-size: 2.5rem;
+}
+.chill-content p {
+    max-width: 50rem;
+    margin-inline: auto;    
+    line-height: 1.8rem;
+}
+.chill-img img{
+    width: 74rem;
+}
+.journey h2 {
+    position: relative;
+    bottom: 2rem;
+    left: 2.5rem;
+    font-size: 1.8rem;
+}
+.journey-download{
+    margin: 1rem 0;
+    text-align: center;
+}
+.journey-download a {
+    color: #ffffff;
+    background-color: #5865f2;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+}
+.journey-download a.open-window::before{
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+/* chill end */
+
+/* Footer start */
+footer{
+    background-color: #23272a;
+    color: #5865f2;
+    padding: 3rem 0;
+}
+.social-icons   a{
+    color: #ffffff;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: 20rem repeat(4, 1fr);
+    gap: 2rem;
+    border-bottom: 1px solid #404eed;
+    padding: 2rem 0;
+}
+.imagin {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+.imagin h2{
+    font-size: 2rem;
+    line-height: 2rem;
+    max-width: 15rem;
+}
+.product h2,
+.company h2,
+.resources h2,
+.policies h2{
+    font-size: 1rem;
+}
+.product ul,
+.company ul,
+.resources ul,
+.policies ul{
+    margin: 0.6rem 0;
+}
+.product ul li a,
+.company ul li a,
+.resources ul li a,
+.policies ul li a{
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+.product ul li,
+.company ul li,
+.resources ul li,
+.policies ul li{
+    line-height: 1.8rem;
+}
+.footer-logo-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.footer-logo a{
+    color: #ffffff;
+}
+.footer-logo .open-discord a{
+    background-color: #5865f2;
+}
+/* Footer end */
