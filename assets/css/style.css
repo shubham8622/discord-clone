@@ -13,6 +13,30 @@
 .bars{
     display: none;
     color: #ffffff;
+
+}
+.mobile-navigation.active{
+    opacity:2;
+}
+.mobile-navigation{
+    background-color: #404eed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: -1;
+    transition: all 0.3s linear;
+}
+.mobile-navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+.mobile-navigation ul li a{
+    font-size:1.3rem;
+    color: #ffffff;
 }
 html,body{
     overflow-x: hidden;
@@ -27,6 +51,7 @@ ul{
 header{
     position: absolute;
     width: 100%;
+    z-index: 4;
 }
 .container{
     max-width: 1400px;

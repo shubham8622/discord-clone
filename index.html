@@ -31,10 +31,21 @@
                 <div class="open-discord">
                     <a href="javascript:void(0);">Open discord</a>
                 </div>
-                <div class="bars">
+                <div class="bars" id="bars">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </nav>
+        </div>
+        <div class="mobile-navigation" id="mobile-navigation">
+            <ul>
+                <li><a href="javascript:void(0);" class="nav-links">Download</a></li>
+                <li><a href="javascript:void(0);" class="nav-links">Nitro</a></li>
+                <li><a href="javascript:void(0);" class="nav-links">Discover</a></li>
+                <li><a href="javascript:void(0);" class="nav-links">Safety</a></li>
+                <li><a href="javascript:void(0);" class="nav-links">Support</a></li>
+                <li><a href="javascript:void(0);" class="nav-links">Blog</a></li>
+                <li><a href="javascript:void(0);" class="nav-links">Carrers</a></li>
+            </ul>
         </div>
     </header>
     <!-- Header end -->
@@ -205,5 +216,11 @@
         </div>
     </footer>
     <!-- Footer end -->
+    <script>
+        let bars = document.getElementById("bars").addEventListener("click",()=>{
+            let mobileNav = document.getElementById("mobile-navigation");
+            (mobileNav.classList.contains("active")) ? mobileNav.classList.remove("active") : mobileNav.classList.add("active");
+        })
+    </script>
 </body>
 </html>
